@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm221_5">
+    <TableLayout
+        android:id="@+id/tbl1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dip">
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY">
+
+                <TextView
+                    android:id="@+id/lblTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:text="Ahora tú mismo (a) señala cómo experimentas las siguientes emociones, marcando el cuadro que describa lo que ocurre en tu cuerpo con cada una:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/layoutTabla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/lblTitulo"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/imagen38"
+                    android:scaleType="fitXY">
+
+                    <CheckBox
+                        android:id="@+id/chk1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105dp"
+                        android:layout_marginTop="75dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="175dp"
+                        android:layout_marginTop="75dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="245dp"
+                        android:layout_marginTop="75dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="75dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105dp"
+                        android:layout_marginTop="110dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="175dp"
+                        android:layout_marginTop="110dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="245dp"
+                        android:layout_marginTop="110dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="110dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105dp"
+                        android:layout_marginTop="150dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="175dp"
+                        android:layout_marginTop="150dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="245dp"
+                        android:layout_marginTop="150dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="150dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105dp"
+                        android:layout_marginTop="185dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="175dp"
+                        android:layout_marginTop="185dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="245dp"
+                        android:layout_marginTop="185dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="185dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105dp"
+                        android:layout_marginTop="220dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="175dp"
+                        android:layout_marginTop="220dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="245dp"
+                        android:layout_marginTop="220dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="220dp" />
+
+
+
+                    <CheckBox
+                        android:id="@+id/chk21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105dp"
+                        android:layout_marginTop="255dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="175dp"
+                        android:layout_marginTop="255dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="245dp"
+                        android:layout_marginTop="255dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="255dp" />
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/tbl1"
+        app:layout_constraintEnd_toEndOf="@+id/tbl1">
+
+        <Button
+            android:id="@+id/btnPrev11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0489B1"
+            android:onClick="gotoFrm"
+            android:tag="frm221_4"
+            android:text="Anterior"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btnNext10"
+            android:layout_toStartOf="@+id/btnNext10" />
+
+        <Button
+            android:id="@+id/btnNext10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0489B1"
+            android:onClick="gotoFrm"
+            android:tag="frm221_6"
+            android:text="Siguiente"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+

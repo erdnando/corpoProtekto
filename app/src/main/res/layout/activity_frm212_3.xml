@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm212_3">
+
+    <TableLayout
+        android:id="@+id/layoutx"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/lblTexto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="fill"
+                    android:text="En tal caso, toma una foto, observala y escribe lo primero que venga a tu mente al respecto, sin importar lo irracional o irreal que pueda ser dicho pensamiento:"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/fototRandom"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_below="@+id/lblTexto1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/camera" />
+
+                <EditText
+                    android:id="@+id/txtRandom"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/fototRandom"
+                    android:layout_marginTop="10dp"
+                    android:background="?attr/colorControlHighlight"
+                    android:hint="Escriba lo que venga a su mente..."
+                    android:inputType="text|textMultiLine"
+                    android:maxLength="255" />
+
+                <Button
+                    android:id="@+id/btnPrev11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm212_1"
+                    android:text="Anterior"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/btnNext10"
+                    android:layout_toStartOf="@+id/btnNext10" />
+
+                <Button
+                    android:id="@+id/btnNext10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm212_4"
+                    android:text="Siguiente"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>

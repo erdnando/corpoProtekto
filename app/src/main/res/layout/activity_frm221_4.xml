@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm221_4">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="¿Cómo puedo identificar correctamente mis emociones?
+Es todo un proceso que aunque parece fácil, no siempre resulta así para todos. Por eso te sugerimos lo siguiente:"
+            android:textColor="#424242"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:id="@+id/scrllMain"
+            android:layout_width="wrap_content"
+            android:layout_height="370dp"
+            android:layout_below="@+id/txtTitulo"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_below="@+id/lblTexto1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/imagen79" />
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/scrllMain"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPrev11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/lblTexto1"
+                android:layout_toLeftOf="@+id/btnNext10"
+                android:layout_toStartOf="@+id/btnNext10"
+                android:backgroundTint="#0489B1"
+                android:onClick="gotoFrm"
+                android:tag="frm221_3"
+                android:text="Anterior"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnNext10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:backgroundTint="#0489B1"
+                android:onClick="gotoFrm"
+                android:tag="frm221_5"
+                android:text="Siguiente"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

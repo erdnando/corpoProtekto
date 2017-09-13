@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm311_4">
+
+
+    <TableLayout
+        android:id="@+id/layoutx"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-2dp"
+        android:background="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/lblTexto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblTexto0"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="fill"
+                    android:text="En el cuidarnos o no cuidarnos, las creencias juegan un papel fundamental. Aunque algunas pueden parecer ilógicas o irracionales, tienen un efecto enorme en nuestras acciones. Algunos ejemplos de las creencias detrás de la decisión de arriesgarnos serían:"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_alignLeft="@+id/lblTexto1"
+
+                    android:layout_below="@+id/lblTexto1"
+                    android:layout_marginTop="21dp"
+                    app:srcCompat="@drawable/imagen56" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/lblTexto1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_toRightOf="@+id/imageView"
+                    app:srcCompat="@drawable/imagen57" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="21dp"
+                    app:srcCompat="@drawable/imagen58" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:padding="0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY">
+
+                <Button
+                    android:id="@+id/btnPrev11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/btnNext10"
+                    android:layout_toStartOf="@+id/btnNext10"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm311_3"
+                    android:text="Anterior"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnNext10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm311_5"
+                    android:text="Siguiente"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

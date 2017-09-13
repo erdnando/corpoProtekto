@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm122">
+
+    <TableLayout
+        android:id="@+id/tbl1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dip">
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY">
+
+                <TextView
+                    android:id="@+id/lblTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="Viendo ambas fotos, contesta lo siguiente:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/linea1"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_below="@id/lblTitulo"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#0489B1" />
+
+            </RelativeLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dip">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:orientation="horizontal" >
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:layout_constraintTop_creator="1"
+                    tools:layout_constraintBottom_creator="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="8dp"
+                    tools:layout_constraintLeft_creator="1"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dip">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:id="@+id/fotoIdeal"
+                                android:layout_width="140dp"
+                                android:layout_height="140dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/camera" />
+
+                            <ImageView
+                                android:id="@+id/fototMia"
+                                android:layout_width="140dp"
+                                android:layout_height="140dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/camera" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dip">
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:layout_marginTop="-15dp"
+                android:scaleType="fitXY">
+
+                <TextView
+                    android:id="@+id/lblP1"
+                    android:layout_width="wrap_content"
+                    android:gravity="fill"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCorreo"
+                    android:layout_marginTop="0dp"
+                    android:layout_margin="15dp"
+                    android:textColor="#424242"
+                    android:text="¿Consideras que una persona es mejor físicamente que otra?"
+                    android:textSize="16sp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grpRb1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="-15dp"
+                    android:layout_alignRight="@+id/lblP1"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioButton1Si"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton1No"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="No" />
+                </RadioGroup>
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/lblP2"
+                    android:layout_width="wrap_content"
+                    android:gravity="fill"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/grpRb1"
+                    android:layout_margin="15dp"
+                    android:textColor="#424242"
+                    android:text="¿Te gustaría ser como la persona de la segunda foto?"
+                    android:textSize="16sp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grpRb2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginBottom="-10dp"
+                    android:orientation="horizontal"
+                    android:layout_alignRight="@+id/lblP1"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioButton2Si"
+                        android:layout_marginTop="95dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2No"
+                        android:layout_marginTop="95dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="No" />
+                </RadioGroup>
+
+
+
+
+
+                <TextView
+                    android:id="@+id/lblP3"
+                    android:layout_width="wrap_content"
+                    android:gravity="fill"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/grpRb2"
+                    android:layout_margin="15dp"
+                    android:textColor="#424242"
+                    android:text="¿La persona de la foto 1 tendrá alguna cualidad FÍSICA superior a la otra?"
+                    android:textSize="16sp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grpRb3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_alignRight="@+id/lblP1"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioButton3Si"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3No"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="No" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/lblCualidades"
+                    android:layout_width="match_parent"
+                    android:gravity="fill"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/grpRb3"
+                    android:maxLength="255"
+                    android:layout_margin="15dp"
+                    android:textColor="#424242"
+                    android:text="¿Cuáles son esas cualidades?"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/txtCualidades"
+                    android:layout_below="@+id/lblCualidades"
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/lblSeraQue"
+                    android:layout_width="match_parent"
+                    android:gravity="fill"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCualidades"
+                    android:layout_margin="15dp"
+                    android:textColor="#424242"
+                    android:text="¿Será que una diferencia fundamental entre ambas tiene que ver con la actitud más que con la apariencia en sí?"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+        </TableRow>
+
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/tbl1"
+        app:layout_constraintEnd_toEndOf="@+id/tbl1">
+
+
+
+        <Button
+            android:id="@+id/btnNext11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0489B1"
+            android:onClick="gotoFrm"
+            android:tag="frm123"
+            android:text="Continuar"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

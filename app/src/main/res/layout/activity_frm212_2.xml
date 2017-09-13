@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm212_2">
+
+    <TableLayout
+        android:id="@+id/layoutx"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="2dp"
+        android:background="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/tvMiCreencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="fill"
+                    android:text="1- Por favor comparte brevemente ¿cuál fue la situación?"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignLeft="@+id/tvMiCreencia"
+                    android:layout_alignStart="@+id/tvMiCreencia"
+                    android:layout_below="@+id/tvMiCreencia"
+                    android:background="?attr/colorControlHighlight"
+                    android:ems="10"
+                    android:inputType="text|textMultiLine"
+                    android:maxLength="255" />
+
+                <TextView
+                    android:id="@+id/tvMeLlevoA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/editText1"
+                    android:layout_alignStart="@+id/editText1"
+                    android:layout_below="@+id/editText1"
+                    android:layout_marginTop="14dp"
+                    android:gravity="fill"
+                    android:text="2- Describe ¿Qué pensamiento desencadenó?"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignLeft="@+id/tvMeLlevoA"
+                    android:layout_alignStart="@+id/tvMeLlevoA"
+                    android:layout_below="@+id/tvMeLlevoA"
+                    android:background="?attr/colorControlHighlight"
+                    android:ems="10"
+                    android:inputType="text|textMultiLine"
+                    android:maxLength="255" />
+
+
+                <Button
+                    android:id="@+id/btnPrev11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/btnNext10"
+                    android:layout_toStartOf="@+id/btnNext10"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm212_1"
+                    android:text="Anterior"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnNext10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm212_4"
+                    android:text="Siguiente"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

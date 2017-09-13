@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm312_3">
+
+    <TableLayout
+        android:id="@+id/layoutx"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/lblTexto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/lblTexto0"
+                    android:gravity="fill"
+                    android:text="Las creencias de autocuidado también se componen por:
+
+- Aquellos mensajes que recibimos del afuera o de nosotros (as) mismos (as):
+
+“Un hombre que vale la pena, no me dejará si le pido que nos cuidemos”
+“Estoy en los días en que es más probable que me embarace”
+
+- La motivación para la salud
+
+“Para mí es importante cuidar mi cuerpo de infecciones”
+“Quiero terminar mi carrera por eso no sería conveniente un embarazo ahorita”"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:padding="0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY">
+
+                <Button
+                    android:id="@+id/btnPrev11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm312_2"
+                    android:text="Anterior"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/btnNext10"
+                    android:layout_toStartOf="@+id/btnNext10" />
+
+                <Button
+                    android:id="@+id/btnNext10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm312_4"
+                    android:text="Siguiente"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>

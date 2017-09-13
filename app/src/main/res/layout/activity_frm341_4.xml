@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm341_4">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <TableLayout
+            android:id="@+id/layoutx"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="-10dp"
+            android:background="#FFFFFF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="0dip">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:id="@+id/tvPregunta8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="fill"
+                        android:text="Por favor llena este registro con una situación similar a la del ejemplo:"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvPregunta8"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        app:srcCompat="@drawable/imagen76" />
+
+                    <TextView
+                        android:id="@+id/tvPregunta1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="fill"
+                        android:text="1- ¿Qué haré hoy?"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etPreg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/tvPregunta2"
+                        android:layout_alignLeft="@+id/tvPregunta1"
+                        android:layout_alignRight="@+id/tvPregunta2"
+                        android:layout_alignStart="@+id/tvPregunta1"
+                        android:layout_below="@+id/tvPregunta1"
+                        android:layout_marginTop="-10dp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+
+                    <TextView
+                        android:id="@+id/tvPregunta2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etPreg1"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="fill"
+                        android:text="2- ¿Qué conductas de riesgo podría llevar a cabo?"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvPregunta2Res1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvPregunta2"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="fill"
+                        android:text="Posibilidad 1:"
+                        android:textColor="#424242"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etPreg2Res1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/tvPregunta2"
+                        android:layout_alignLeft="@+id/tvPregunta2Res1"
+                        android:layout_alignRight="@+id/tvPregunta2"
+                        android:layout_alignStart="@+id/tvPregunta2Res1"
+                        android:layout_below="@+id/tvPregunta2Res1"
+                        android:layout_marginTop="-10dp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tvPregunta2Res2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etPreg2Res1"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="fill"
+                        android:text="Posibilidad 2:"
+                        android:textColor="#424242"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etPreg2Res2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/tvPregunta3"
+                        android:layout_alignLeft="@+id/tvPregunta2Res2"
+                        android:layout_alignRight="@+id/tvPregunta3"
+                        android:layout_alignStart="@+id/tvPregunta2Res2"
+                        android:layout_below="@+id/tvPregunta2Res2"
+                        android:layout_marginTop="-10dp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+
+                    <TextView
+                        android:id="@+id/tvPregunta3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etPreg2Res2"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="fill"
+                        android:text="3- ¿Qué conductas de protección puedo realizar?"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvPregunta3Res1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvPregunta3"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="fill"
+                        android:text="Posibilidad 1:"
+                        android:textColor="#424242"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etPreg3Res1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/tvPregunta3"
+                        android:layout_alignLeft="@+id/tvPregunta3Res1"
+                        android:layout_alignRight="@+id/tvPregunta3"
+                        android:layout_alignStart="@+id/tvPregunta3Res1"
+                        android:layout_below="@+id/tvPregunta3Res1"
+                        android:layout_marginTop="-10dp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tvPregunta3Res2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etPreg3Res1"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="fill"
+                        android:text="Posibilidad 2:"
+                        android:textColor="#424242"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etPreg3Res2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/tvPregunta4"
+                        android:layout_alignLeft="@+id/tvPregunta3Res2"
+                        android:layout_alignRight="@+id/tvPregunta4"
+                        android:layout_alignStart="@+id/tvPregunta3Res2"
+                        android:layout_below="@+id/tvPregunta3Res2"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+
+                    <TextView
+                        android:id="@+id/tvPregunta4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etPreg3Res2"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="fill"
+                        android:text="4- ¿Qué resultados obtuve?"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvPregunta4Res1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvPregunta4"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="fill"
+                        android:text="Posibilidad 1:"
+                        android:textColor="#424242"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etPreg4Res1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/etPreg4Res2"
+                        android:layout_alignLeft="@+id/tvPregunta4Res1"
+                        android:layout_alignRight="@+id/etPreg4Res2"
+                        android:layout_alignStart="@+id/tvPregunta4Res1"
+                        android:layout_below="@+id/tvPregunta4Res1"
+                        android:layout_marginTop="-10dp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tvPregunta4Res2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etPreg4Res1"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="fill"
+                        android:text="Posibilidad 2:"
+                        android:textColor="#424242"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etPreg4Res2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/tvPregunta4"
+                        android:layout_alignLeft="@+id/tvPregunta4Res2"
+                        android:layout_alignRight="@+id/tvPregunta4"
+                        android:layout_alignStart="@+id/tvPregunta4Res2"
+                        android:layout_below="@+id/tvPregunta4Res2"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:padding="0dip">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY">
+
+                    <Button
+                        android:id="@+id/btnPrev11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/btnNext10"
+                        android:layout_toStartOf="@+id/btnNext10"
+                        android:backgroundTint="#0489B1"
+                        android:onClick="gotoFrm"
+                        android:tag="frm341_3"
+                        android:text="Anterior"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/btnNext10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:backgroundTint="#0489B1"
+                        android:onClick="gotoFrm"
+                        android:tag="frm341_5"
+                        android:text="Siguiente"
+                        android:textColor="#FFFFFF" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

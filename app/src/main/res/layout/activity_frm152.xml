@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm152">
+
+    <TableLayout
+        android:id="@+id/tbl1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="0dip">
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY">
+
+                <TextView
+                    android:id="@+id/txtComenzar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="left"
+                    android:text="Continuemos..."
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/linea1"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_below="@id/txtComenzar"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#0489B1" />
+
+                <TextView
+                    android:id="@+id/lbllaimagen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linea1"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="fill"
+                    android:text="3. Sentirnos mal con alguna parte de nuestro cuerpo tiene que ver con…"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grpRbM1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbllaimagen"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="-15dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rd1a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Algún evento traumático" />
+
+                    <RadioButton
+                        android:id="@+id/rd1b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Los pensamientos y creencias que tenemos" />
+
+                    <RadioButton
+                        android:id="@+id/rd1c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="La información que proviene del medio" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/lblserconientes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/grpRbM1"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="fill"
+                    android:text="4. Nuestra apariencia es mucho de lo que mostramos al mundo, por eso es importante…"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grpRbM2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblserconientes"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="-15dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rd2a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Reconocer que en ella influyen varios estímulos" />
+
+                    <RadioButton
+                        android:id="@+id/rd2b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Siempre creer que nos vemos mejor que nunca" />
+
+                    <RadioButton
+                        android:id="@+id/rd2c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Mejorar a como dé lugar cómo nos vemos" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/tbl1"
+        app:layout_constraintEnd_toEndOf="@+id/tbl1">
+
+        <Button
+            android:id="@+id/btnPrev11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0489B1"
+            android:onClick="gotoFrm"
+            android:tag="frm151"
+            android:text="Anterior"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnNext11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0489B1"
+            android:onClick="gotoFrm"
+            android:tag="frm153"
+            android:text="Siguiente"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

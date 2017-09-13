@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm201_3">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  >
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY">
+
+                <TextView
+                    android:id="@+id/tvPregunta5"
+                    android:layout_width="wrap_content"
+                    android:gravity="fill"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_margin="15dp"
+                    android:textColor="#424242"
+                    android:text="5. La emoción del enojo sirve para…"
+                    android:textSize="18sp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grpRbM3Pregunta5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_below="@+id/tvPregunta5">
+                    <RadioButton
+                        android:id="@+id/rbM3P5R1"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ser solidarios con otras personas" />
+
+                    <RadioButton
+                        android:id="@+id/rbM3P5R2"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Solicitar el apoyo de los demás" />
+
+                    <RadioButton
+                        android:id="@+id/rbM3P5R3"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Afrontar aquello que representa un peligro" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/tvPregunta6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/grpRbM3Pregunta5"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="fill"
+                    android:text="6. Son ejemplos de estrategias poco efectivas para controlar nuestras emociones…"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grpRbM3Pregunta6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_below="@+id/tvPregunta6">
+                    <RadioButton
+                        android:id="@+id/rbM3P6R1"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Analizar si el pensamiento que desencadenó esa emoción es racional o irracional" />
+
+                    <RadioButton
+                        android:id="@+id/rbM3P6R2"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pensar mucho en una situación desagradable o evitar demostrar lo que sentimos" />
+
+                    <RadioButton
+                        android:id="@+id/rbM3P6R3"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Realizar una acción opuesta a lo que provoca esa emoción o llevar un diario de nuestras emociones" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnPrev11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm201_2"
+                    android:text="Anterior"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/btnNext10"
+                    android:layout_toStartOf="@+id/btnNext10" />
+
+                <Button
+                    android:id="@+id/btnNext10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm201_4"
+                    android:text="Siguiente"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+            </RelativeLayout>
+
+
+        </TableRow>
+
+
+    </TableLayout >
+
+
+</android.support.constraint.ConstraintLayout>

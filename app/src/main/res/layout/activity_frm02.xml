@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm02">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  >
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dip" >
+
+            <TextView
+                android:id="@+id/txtRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_marginLeft="16dp"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:text="Registro"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:textSize="28sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY">
+
+                <TextView
+                    android:id="@+id/txtComenzar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="left"
+                    android:text="Para comenzar te pedimos que nos proporciones los siguientes datos:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtnota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtComenzar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:text="(favor de ingresar el mismo correo de la invitación)"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/linea1"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_below="@id/txtnota"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#0489B1"/>
+
+                <TextView
+                    android:id="@+id/lblNickname"
+                    android:layout_width="match_parent"
+                    android:gravity="fill"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linea1"
+                    android:layout_marginTop="25dp"
+                    android:layout_margin="15dp"
+                    android:textColor="#424242"
+                    android:text="Nickname:"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/txtNickname"
+                    android:layout_below="@+id/lblNickname"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="12"
+                    android:inputType="textPersonName"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/lblCorreo"
+                    android:layout_width="match_parent"
+                    android:gravity="fill"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNickname"
+                    android:layout_marginTop="25dp"
+                    android:layout_margin="15dp"
+                    android:textColor="#424242"
+                    android:text="Correo:"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/txtCorreo"
+                    android:layout_below="@+id/lblCorreo"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="40"
+                    android:inputType="textEmailAddress"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/lblSexo"
+                    android:layout_width="290dp"
+                    android:gravity="fill"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCorreo"
+                    android:layout_marginTop="25dp"
+                    android:layout_margin="15dp"
+                    android:textColor="#424242"
+                    android:text="Sexo:"
+                    android:textSize="18sp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grpRb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_alignRight="@+id/lblSexo"
+                    android:layout_below="@+id/txtCorreo">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonM"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mujer" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonH"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hombre" />
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/btnIniciar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm03"
+                    android:text="Siguiente"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/txtComenzar"
+                    android:layout_alignEnd="@+id/txtComenzar" />
+
+
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/fondoOffice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fondoficce"
+                android:scaleType="fitXY"
+                />
+
+        </TableRow>
+
+
+    </TableLayout >
+
+
+</android.support.constraint.ConstraintLayout>

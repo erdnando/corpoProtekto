@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm322_2">
+
+    <TableLayout
+        android:id="@+id/layoutx"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-10dp"
+        android:background="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/lblTexto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblTexto0"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="fill"
+                    android:text="Comenta en el cuadro cuáles son los métodos anticonceptivos que conoces y señala cuáles has utilizado:"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/lblM1"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/lblTexto1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill"
+                    android:hint="1.- Escribe tu respuesta"
+                    android:maxLength="255"
+                    android:text=""
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/lblM2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblM1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="fill"
+                    android:hint="2.- Escribe tu respuesta"
+                    android:maxLength="255"
+                    android:text=""
+                    android:textColor="#424242"
+                    android:textSize="18sp"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/lblM3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblM2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="fill"
+                    android:hint="3.- Escribe tu respuesta"
+                    android:maxLength="255"
+                    android:text=""
+                    android:textColor="#424242"
+                    android:textSize="18sp"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/lblM4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblM3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="fill"
+                    android:hint="4.- Escribe tu respuesta"
+                    android:maxLength="255"
+                    android:text=""
+                    android:textColor="#424242"
+                    android:textSize="18sp"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/lblM5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblM4"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="fill"
+                    android:hint="5.- Escribe tu respuesta"
+                    android:maxLength="255"
+                    android:text=""
+                    android:textColor="#424242"
+                    android:textSize="18sp"
+                    android:visibility="invisible" />
+
+                <CheckBox
+                    android:id="@+id/chkM1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignEnd="@+id/lblM1"
+                    android:layout_alignRight="@+id/lblM1"
+                    android:layout_below="@+id/lblM5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Parches"
+                    android:visibility="invisible" />
+
+                <CheckBox
+                    android:id="@+id/chkM2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignEnd="@+id/lblM2"
+                    android:layout_alignRight="@+id/lblM2"
+                    android:layout_below="@+id/chkM1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:text="Píldora anticonceptiva"
+                    android:visibility="invisible" />
+
+                <CheckBox
+                    android:id="@+id/chkM3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignEnd="@+id/lblM3"
+                    android:layout_alignRight="@+id/lblM3"
+                    android:layout_below="@+id/chkM2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:text="Método del ritmo"
+                    android:visibility="invisible" />
+
+                <CheckBox
+                    android:id="@+id/chkM4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignEnd="@+id/lblM4"
+                    android:layout_alignRight="@+id/lblM4"
+                    android:layout_below="@+id/chkM3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:text="DIU"
+                    android:visibility="invisible" />
+
+                <CheckBox
+                    android:id="@+id/chkM5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignEnd="@+id/lblM5"
+                    android:layout_alignRight="@+id/lblM5"
+                    android:layout_below="@+id/chkM4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-60dp"
+                    android:text="Condones"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:padding="0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY">
+
+                <Button
+                    android:id="@+id/btnNext10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-50dp"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm322_3"
+                    android:text="Siguiente"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>

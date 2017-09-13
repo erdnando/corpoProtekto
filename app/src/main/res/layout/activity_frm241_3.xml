@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm241_3">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TableLayout
+            android:id="@+id/layoutx"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            tools:layout_constraintTop_creator="1"
+            android:layout_marginTop="8dp"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="0dip">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="220dp"
+                        android:layout_height="220dp"
+                        android:layout_alignLeft="@+id/lblTexto1"
+                        android:layout_alignStart="@+id/lblTexto1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="false"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="-13dp"
+                        app:srcCompat="@drawable/imagen47" />
+
+                    <TextView
+                        android:id="@+id/lblTexto1"
+                        android:layout_below="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="fill"
+                        android:text="¡Muy bien! El proceso interno que comienza con la percepción de una situación que nos hace sentir expuestos, y genera pensamientos y emociones, culmina con las acciones que llevamos a cabo, que pueden ser de seguridad o incluso otras que ya vimos, como el verificar constantemente nuestra imagen en el espejo, lo que a su vez provoca otros pensamientos y emociones, haciendo que el ciclo se repita. ¡De ahí la importancia de romper con él!"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btnPrev11"
+                        android:layout_below="@+id/lblTexto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0489B1"
+                        android:onClick="gotoFrm"
+                        android:tag="frm241_2"
+                        android:text="Anterior"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/btnNext10"
+                        android:layout_toStartOf="@+id/btnNext10" />
+
+                    <Button
+                        android:id="@+id/btnNext10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0489B1"
+                        android:onClick="gotoFrm"
+                        android:tag="frm241_4"
+                        android:text="Siguiente"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

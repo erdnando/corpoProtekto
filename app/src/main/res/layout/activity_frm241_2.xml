@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm241_2">
+
+    <TableLayout
+        android:id="@+id/layoutx"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/lblTexto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="fill"
+                    android:text="1- ¿Cuál fue la situación que desencadenó todo?"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etRespuesta1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_below="@+id/lblTexto1"
+                    android:layout_alignLeft="@+id/lblTexto1"
+                    android:layout_alignStart="@+id/lblTexto1"
+                    android:layout_alignRight="@+id/lblTexto1"
+                    android:layout_alignEnd="@+id/lblTexto1" />
+
+                <TextView
+                    android:id="@+id/lblTexto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/etRespuesta1"
+                    android:gravity="fill"
+                    android:text="2- ¿Qué pensamiento pasó por tu mente y a qué corresponde (generalización, adivinación, filtro negativo)?"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etRespuesta2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_below="@+id/lblTexto2"
+                    android:layout_alignLeft="@+id/lblTexto2"
+                    android:layout_alignStart="@+id/lblTexto2"
+                    android:layout_alignRight="@+id/lblTexto2"
+                    android:layout_alignEnd="@+id/lblTexto2" />
+
+                <TextView
+                    android:id="@+id/lblTexto3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/etRespuesta2"
+                    android:gravity="fill"
+                    android:text="3- ¿Cuáles emociones te generó dicho pensamiento y en qué porcentaje?"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etRespuesta3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_below="@+id/lblTexto3"
+                    android:layout_alignLeft="@+id/lblTexto3"
+                    android:layout_alignStart="@+id/lblTexto3"
+                    android:layout_alignRight="@+id/lblTexto3"
+                    android:layout_alignEnd="@+id/lblTexto3" />
+
+                <TextView
+                    android:id="@+id/lblTexto4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/etRespuesta3"
+                    android:gravity="fill"
+                    android:text="4- ¿Qué conductas de seguridad llevaste a cabo?"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etRespuesta4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_below="@+id/lblTexto4"
+                    android:layout_alignLeft="@+id/lblTexto4"
+                    android:layout_alignStart="@+id/lblTexto4"
+                    android:layout_alignRight="@+id/lblTexto4"
+                    android:layout_alignEnd="@+id/lblTexto4" />
+
+                <Button
+                    android:id="@+id/btnPrev11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm241_1"
+                    android:text="Anterior"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/btnNext10"
+                    android:layout_toStartOf="@+id/btnNext10" />
+
+                <Button
+                    android:id="@+id/btnNext10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm241_3"
+                    android:text="Siguiente"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

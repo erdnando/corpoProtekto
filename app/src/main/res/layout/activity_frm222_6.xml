@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm222_6">
+
+        <TableLayout
+            android:id="@+id/layoutx"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            tools:layout_constraintTop_creator="1"
+            android:layout_marginTop="8dp"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="0dip">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:id="@+id/tvMiCreencia"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvAhoraCom"
+                        android:layout_alignStart="@+id/tvAhoraCom"
+                        android:gravity="fill"
+                        android:text="Para terminar recuerda alguna otra situación específica donde hayas pensado y sentido algo desagradable con respecto a tu cuerpo.
+1- ¿Qué fue lo que desencadenó todo?"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvMiCreencia"
+                        android:layout_alignStart="@+id/tvMiCreencia"
+                        android:layout_below="@+id/tvMiCreencia"
+                        android:layout_centerVertical="true"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:layout_alignRight="@+id/tvMiCreencia"
+                        android:layout_alignEnd="@+id/tvMiCreencia" />
+
+                    <TextView
+                        android:id="@+id/tvMeLlevoA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="fill"
+                        android:text="2- ¿Qué fue lo que pensaste?"
+                        android:textColor="#424242"
+                        android:textSize="18sp"
+                        android:layout_below="@+id/editText1"
+                        android:layout_alignLeft="@+id/editText1"
+                        android:layout_alignStart="@+id/editText1"
+                        android:layout_alignRight="@+id/tvMiCreencia"
+                        android:layout_alignEnd="@+id/tvMiCreencia" />
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvMeLlevoA"
+                        android:layout_alignStart="@+id/tvMeLlevoA"
+                        android:layout_below="@+id/tvMeLlevoA"
+                        android:layout_marginTop="17dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:layout_alignRight="@+id/editText1"
+                        android:layout_alignEnd="@+id/editText1" />
+
+                    <TextView
+                        android:id="@+id/tvMeLlevoA2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:gravity="fill"
+                        android:text="3- ¿Qué emociones percibiste y en qué porcentaje?"
+                        android:textColor="#424242"
+                        android:textSize="18sp"
+                        android:layout_below="@+id/editText2"
+                        android:layout_alignLeft="@+id/editText2"
+                        android:layout_alignStart="@+id/editText2"
+                        android:layout_alignRight="@+id/btnIniciar"
+                        android:layout_alignEnd="@+id/btnIniciar" />
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvMeLlevoA"
+                        android:layout_alignStart="@+id/tvMeLlevoA"
+                        android:layout_below="@+id/tvMeLlevoA2"
+                        android:layout_marginTop="17dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:layout_alignRight="@+id/editText1"
+                        android:layout_alignEnd="@+id/editText1" />
+
+                    <Button
+                        android:id="@+id/btnPrev11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0489B1"
+                        android:onClick="gotoFrm"
+                        android:tag="frm222_5"
+                        android:text="Anterior"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/btnNext10"
+                        android:layout_toStartOf="@+id/btnNext10" />
+
+                    <Button
+                        android:id="@+id/btnNext10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0489B1"
+                        android:onClick="gotoFrm"
+                        android:tag="frm222_7"
+                        android:text="Siguiente"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

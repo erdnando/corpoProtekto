@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm243_2">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TableLayout
+            android:id="@+id/layoutx"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            tools:layout_constraintTop_creator="1"
+            android:layout_marginTop="8dp"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="0dip">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:id="@+id/lblTexto1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="fill"
+                        android:text="1- ¿Cuál fue el suceso que desencadenó todo?"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etRespuesta1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:layout_below="@+id/lblTexto1"
+                        android:layout_alignLeft="@+id/lblTexto1"
+                        android:layout_alignStart="@+id/lblTexto1"
+                        android:layout_alignRight="@+id/lblTexto1"
+                        android:layout_alignEnd="@+id/lblTexto1" />
+
+                    <TextView
+                        android:id="@+id/lblTexto2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@+id/etRespuesta1"
+                        android:gravity="fill"
+                        android:text="2- ¿Qué pensamientos pasaron por tu mente?"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etRespuesta2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:layout_below="@+id/lblTexto2"
+                        android:layout_alignLeft="@+id/lblTexto2"
+                        android:layout_alignStart="@+id/lblTexto2"
+                        android:layout_alignRight="@+id/lblTexto2"
+                        android:layout_alignEnd="@+id/lblTexto2" />
+
+                    <TextView
+                        android:id="@+id/lblTexto3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@+id/etRespuesta2"
+                        android:gravity="fill"
+                        android:text="3- ¿Qué emociones se generaron y en qué porcentaje?"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etRespuesta3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:layout_below="@+id/lblTexto3"
+                        android:layout_alignLeft="@+id/lblTexto3"
+                        android:layout_alignStart="@+id/lblTexto3"
+                        android:layout_alignRight="@+id/lblTexto3"
+                        android:layout_alignEnd="@+id/lblTexto3" />
+
+                    <TextView
+                        android:id="@+id/lblTexto4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@+id/etRespuesta3"
+                        android:gravity="fill"
+                        android:text="4- ¿Cuáles fueron las acciones llevaste a cabo?"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etRespuesta4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:layout_below="@+id/lblTexto4"
+                        android:layout_alignLeft="@+id/lblTexto4"
+                        android:layout_alignStart="@+id/lblTexto4"
+                        android:layout_alignRight="@+id/lblTexto4"
+                        android:layout_alignEnd="@+id/lblTexto4" />
+
+                    <TextView
+                        android:id="@+id/lblTexto5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@+id/etRespuesta4"
+                        android:gravity="fill"
+                        android:text="5- ¿Consideras que fueron adecuadas o habrías hecho algo diferente?"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/grpRbM1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lblTexto5"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginTop="-15dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/radioButton1a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Sí, fueron adecuadas" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton1b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Pude haber hecho algo mejor" />
+
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/lblTexto6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@+id/grpRbM1"
+                        android:gravity="fill"
+                        android:text="6- ¿Qué otra cosa hubiera sido mejor realizar?"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etRespuesta6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:layout_below="@+id/lblTexto6"
+                        android:layout_alignLeft="@+id/lblTexto6"
+                        android:layout_alignStart="@+id/lblTexto6"
+                        android:layout_alignRight="@+id/lblTexto6"
+                        android:layout_alignEnd="@+id/lblTexto6" />
+
+
+                    <Button
+                        android:id="@+id/btnPrev11"
+                        android:layout_below="@+id/etRespuesta6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0489B1"
+                        android:onClick="gotoFrm"
+                        android:tag="frm242_1"
+                        android:text="Anterior"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/btnNext10"
+                        android:layout_toStartOf="@+id/btnNext10" />
+
+                    <Button
+                        android:id="@+id/btnNext10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0489B1"
+                        android:onClick="gotoFrm"
+                        android:tag="frm243_3"
+                        android:text="Siguiente"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

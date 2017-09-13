@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm332_4">
+
+    <TableLayout
+        android:id="@+id/layoutx"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-10dp"
+        android:background="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/tvPregunta8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sbPregunta7"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="fill"
+                    android:text="A continuación observarás algunas imágenes con situaciones entre parejas para que determines cuál sería un manejo asertivo adecuado:"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="135dp"
+                    android:layout_height="135dp"
+                    android:layout_below="@+id/tvPregunta8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_marginTop="-18dp"
+                    app:srcCompat="@drawable/imagen73" />
+
+                <TextView
+                    android:id="@+id/tvPregunta85"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="-15dp"
+                    android:gravity="fill"
+                    android:text="1- ¿Cuál sería un modo asertivo de expresarlo?"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/tvPregunta85"
+                    android:layout_alignLeft="@+id/tvPregunta85"
+                    android:layout_alignRight="@+id/tvPregunta85"
+                    android:layout_alignStart="@+id/tvPregunta85"
+                    android:layout_below="@+id/tvPregunta85"
+                    android:layout_marginTop="-14dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:maxLength="255" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="135dp"
+                    android:layout_height="130dp"
+                    android:layout_below="@+id/editText3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="-15dp"
+                    app:srcCompat="@drawable/imagen74" />
+
+                <TextView
+                    android:id="@+id/tvPregunta9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="fill"
+                    android:text="2- ¿Cómo podría ella abordar ese tema?"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPregunta9"
+                    android:layout_marginTop="0dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:maxLength="255" />
+
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:padding="0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY">
+
+                <Button
+                    android:id="@+id/btnPrev11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/btnNext10"
+                    android:layout_toStartOf="@+id/btnNext10"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm332_3"
+                    android:text="Anterior"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnNext10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm332_5"
+                    android:text="Siguiente"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>

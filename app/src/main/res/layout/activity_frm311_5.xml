@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm311_5">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY">
+
+                <TextView
+                    android:id="@+id/tvIdentAlg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linea1"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="fill"
+                    android:text="1- ¿Identificas alguna de estas creencias en ti?"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grpRbM3IdentAlg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvIdentAlg"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="-15dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbM3IdentAlgR1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/rbM3IdentAlgR2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rbM3IdentAlgR3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Tal vez" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvAhoraCom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/tvIdentAlg"
+                    android:layout_alignLeft="@+id/tvIdentAlg"
+                    android:layout_alignRight="@+id/tvIdentAlg"
+                    android:layout_alignStart="@+id/tvIdentAlg"
+                    android:layout_below="@+id/grpRbM3IdentAlg"
+                    android:layout_marginTop="12dp"
+                    android:gravity="fill"
+                    android:text="Ahora comparte alguna otra creencia que te haya llevado a tener alguna conducta de riesgo…"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvMiCreencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="fill"
+                    android:text="2- Mi creencia fue:"
+                    android:textColor="#424242"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/tvAhoraCom"
+                    android:layout_alignStart="@+id/tvAhoraCom"
+                    android:layout_alignRight="@+id/tvAhoraCom"
+                    android:layout_alignEnd="@+id/tvAhoraCom" />
+
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:singleLine="false"
+                    android:maxLength="255"
+                    android:layout_below="@+id/tvMiCreencia"
+                    android:layout_alignLeft="@+id/tvMiCreencia"
+                    android:layout_alignStart="@+id/tvMiCreencia"
+                    android:layout_alignRight="@+id/tvMiCreencia"
+                    android:layout_alignEnd="@+id/tvMiCreencia" />
+
+                <TextView
+                    android:id="@+id/tvMeLlevoA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33dp"
+                    android:gravity="fill"
+                    android:text="3- Me llevó a:"
+                    android:textColor="#424242"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/editText1"
+                    android:layout_alignRight="@+id/editText1"
+                    android:layout_alignEnd="@+id/editText1"
+                    android:layout_alignLeft="@+id/editText1"
+                    android:layout_alignStart="@+id/editText1" />
+
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvMeLlevoA"
+                    android:layout_alignStart="@+id/tvMeLlevoA"
+                    android:layout_below="@+id/tvMeLlevoA"
+                    android:layout_marginTop="17dp"
+                    android:ems="10"
+                    android:maxLength="255"
+                    android:inputType="textPersonName"
+                    android:singleLine="false"
+                    android:layout_alignRight="@+id/editText1"
+                    android:layout_alignEnd="@+id/editText1" />
+
+                <Button
+                    android:id="@+id/btnPrev11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm311_4"
+                    android:text="Anterior"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/btnNext10"
+                    android:layout_toStartOf="@+id/btnNext10" />
+
+                <Button
+                    android:id="@+id/btnNext10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm311_6"
+                    android:text="Siguiente"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout >
+
+</android.support.constraint.ConstraintLayout>

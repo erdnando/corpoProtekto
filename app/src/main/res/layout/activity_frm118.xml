@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm118">
+    <TableLayout
+        android:id="@+id/tbl1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dip">
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:scaleType="fitXY">
+
+                <TextView
+                    android:id="@+id/lblLasPartes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linea1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:alpha="0.7"
+                    android:background="@android:color/background_light"
+                    android:gravity="fill"
+                    android:text="Las partes que más te agradan de tu cuerpo son:"
+                    android:textColor="#424242"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lblMasAgradan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblLasPartes"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblMuchasFel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/lblLasPartes"
+                    android:layout_alignStart="@+id/lblLasPartes"
+                    android:layout_below="@+id/lblMasAgradan"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.7"
+                    android:background="@android:color/background_light"
+                    android:gravity="fill"
+                    android:text="¡Muchas felicidades por identificarlas! No las pierdas de vista y sácales el mayor provecho posible."
+                    android:textColor="#424242"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lblPorOtroL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblMuchasFel"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:alpha="0.7"
+                    android:background="@android:color/background_light"
+                    android:gravity="fill"
+                    android:text="Por otro lado, las que menos te gustan son:"
+                    android:textColor="#424242"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lblMenosAgradan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/lblPorOtroL"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="45dp"
+                    android:alpha="0.7"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblNoHayQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageView"
+                    android:layout_alignStart="@+id/imageView"
+                    android:layout_below="@+id/lblMenosAgradan"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="16dp"
+                    android:alpha="0.7"
+                    android:background="@android:color/background_light"
+                    android:gravity="fill"
+                    android:text="No hay que enfocarse tanto en ellas cuando estés frente al espejo. No olvides que lo más importante NO es tu reflejo, que puede estar alterado por muchos estímulos, sino lo que piensas y sientes sobre eso, que será el tema siguiente…"
+                    android:textColor="#424242"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_alignLeft="@+id/lblMenosAgradan"
+                    android:layout_alignStart="@+id/lblMenosAgradan"
+                    android:layout_below="@+id/lblNoHayQ"
+                    android:background="@drawable/imagen16"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/tbl1"
+        app:layout_constraintEnd_toEndOf="@+id/tbl1">
+
+        <Button
+            android:id="@+id/btnNext11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0489B1"
+            android:onClick="gotoFrm"
+            android:tag="frm06"
+            android:text="Siguiente"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

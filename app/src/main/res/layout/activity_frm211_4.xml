@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm211_5">
+
+
+    <TableLayout
+        android:id="@+id/layoutx"
+        android:layout_width="wrap_content"
+        android:layout_height="551dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/lblTexto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="fill"
+                    android:text="Ahora, después de haber observado los ejemplos ¿podrías identificar a qué corresponden los pensamientos en los siguientes casos?"
+                    android:textColor="#424242"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/lblTexto1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_alignLeft="@+id/imageView2"
+                        android:layout_alignStart="@+id/imageView2"
+                        android:layout_below="@+id/lblTexto1"
+                        android:layout_marginLeft="43dp"
+                        android:layout_marginTop="14dp"
+                        app:srcCompat="@drawable/imagen32" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="170dp"
+                        android:layout_height="150dp"
+                        android:layout_alignLeft="@+id/lblTexto1"
+                        android:layout_alignStart="@+id/lblTexto1"
+                        android:layout_below="@+id/imageView1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="186dp"
+                        app:srcCompat="@drawable/imagen33" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/linearLayoutM"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="-18dp"
+                    android:gravity="bottom|right"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnPrev11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/imageView3"
+                        android:layout_toLeftOf="@+id/btnNext10"
+                        android:layout_toStartOf="@+id/btnNext10"
+                        android:backgroundTint="#0489B1"
+                        android:onClick="gotoFrm"
+                        android:tag="frm211_3"
+                        android:text="Anterior"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/btnNext10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:backgroundTint="#0489B1"
+                        android:onClick="gotoFrm"
+                        android:tag="frm211_5"
+                        android:text="Siguiente"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>

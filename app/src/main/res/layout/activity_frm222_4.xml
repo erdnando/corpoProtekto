@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm222_4">
+
+
+    <RelativeLayout
+        android:id="@+id/lyoutTop"
+        android:layout_width="wrap_content"
+        android:layout_height="551dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-5dp"
+            app:srcCompat="@drawable/imagen41" />
+
+        <TextView
+            android:id="@+id/tvMiCreencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="fill"
+            android:text="1- Pienso que:"
+            android:textColor="#424242"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/tvMiCreencia"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="255" />
+
+        <TextView
+            android:id="@+id/tvMeLlevoA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tvMiCreencia"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_alignRight="@+id/tvMiCreencia"
+            android:layout_alignStart="@+id/editText1"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="23dp"
+            android:gravity="fill"
+            android:text="2- Mis emociones son (señalar porcentaje):"
+            android:textColor="#424242"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMeLlevoA"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="255" />
+
+        <!--<Spinner
+            android:id="@+id/cboPorcentaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMeLlevoA"
+
+            android:layout_marginLeft="200dp"
+
+            android:layout_marginTop="-23dp"
+            android:entries="@array/porcentajes_array" />-->
+
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnPrev11"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/btnNext10"
+                android:layout_toStartOf="@+id/btnNext10"
+                android:backgroundTint="#0489B1"
+                android:onClick="gotoFrm"
+                android:tag="frm222_3"
+                android:text="Anterior"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnNext10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:backgroundTint="#0489B1"
+                android:onClick="gotoFrm"
+                android:tag="frm222_5"
+                android:text="Siguiente"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

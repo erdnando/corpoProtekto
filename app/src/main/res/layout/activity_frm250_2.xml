@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protekto.corpo.com.mx.corpoprotekto.frm250_2">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  >
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY">
+
+                <TextView
+                    android:id="@+id/tvPregunta3"
+                    android:layout_width="wrap_content"
+                    android:gravity="fill"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linea1"
+                    android:layout_marginTop="25dp"
+                    android:layout_margin="15dp"
+                    android:textColor="#424242"
+                    android:text="3. Cuando pensamos “Este barro que me salió abarca toda mi cara”, caemos en…"
+                    android:textSize="18sp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grpRbM3Pregunta3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_below="@+id/tvPregunta3">
+                    <RadioButton
+                        android:id="@+id/rbM3P3R1"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Predecir sin evidencias lo que ocurrirá" />
+
+                    <RadioButton
+                        android:id="@+id/rbM3P3R2"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adivinar lo que otros pensarán" />
+
+                    <RadioButton
+                        android:id="@+id/rbM3P3R3"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Filtrar la información negativa sin considerar lo positivo" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/tvPregunta4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/grpRbM3Pregunta3"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="fill"
+                    android:text="4. La emoción de la vergüenza tiene el objetivo de…"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grpRbM3Pregunta4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_below="@+id/tvPregunta4">
+                    <RadioButton
+                        android:id="@+id/rbM3P4R1"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evitar que hagamos acciones arriesgadas que traigan consecuencias negativas" />
+
+                    <RadioButton
+                        android:id="@+id/rbM3P4R2"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Poner límites a las demás personas" />
+
+                    <RadioButton
+                        android:id="@+id/rbM3P4R3"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pensar y buscar posibles soluciones a los problemas" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnPrev11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm201_1"
+                    android:text="Anterior"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/btnNext10"
+                    android:layout_toStartOf="@+id/btnNext10" />
+
+                <Button
+                    android:id="@+id/btnNext10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0489B1"
+                    android:onClick="gotoFrm"
+                    android:tag="frm250_3"
+                    android:text="Siguiente"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+            </RelativeLayout>
+
+
+        </TableRow>
+
+
+    </TableLayout >
+
+
+</android.support.constraint.ConstraintLayout>
